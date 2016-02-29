@@ -11,4 +11,4 @@ RUN apk --update add php php-openssl php-json php-phar git \
     
 WORKDIR /project
 VOLUME /project
-ENTRYPOINT ["composer"]
+ENTRYPOINT ["composer config -g github-oauth.github.com \"${GITHUB_OAUTH}\" && composer"]
