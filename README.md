@@ -6,5 +6,5 @@ Build from alpine, include php-fpm, php-mcrypt, php-gd, php-memcache, php-mysql,
 
 usage
 ```bash
-docker run -v path-to-project:/project treerootboy/mini-php composer -v
+docker run -v path-to-project:/project treerootboy/mini-php composer install
 ```
